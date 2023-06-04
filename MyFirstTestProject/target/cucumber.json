@@ -1,0 +1,95 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Verify that admin users search panel filters users correctly",
+        "description": "",
+        "id": "admin-user;verify-that-admin-users-search-panel-filters-users-correctly",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13058490700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am logged in",
+            "match": {
+              "location": "adm_searchUserTests.iAmLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3848278700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click the admin menu",
+            "match": {
+              "location": "adm_searchUserTests.iClickTheAdminMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2080066200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should see the users page",
+            "match": {
+              "location": "adm_searchUserTests.iShouldSeeTheUsersPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2200070000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter user data",
+            "match": {
+              "location": "adm_searchUserTests.iEnterUserData()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3180372300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on the search button",
+            "match": {
+              "location": "adm_searchUserTests.iClickOnTheSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66444500,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div/div/div[2]/div\"}\n  (Session info: chrome\u003d114.0.5735.90)\n  (Driver info: chromedriver\u003d113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}),platform\u003dWindows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 62 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.0.1\u0027, revision: \u00271969d75\u0027, time: \u00272016-10-18 09:49:13 -0700\u0027\nSystem info: host: \u0027DESKTOP-OI6IG69\u0027, ip: \u0027192.168.32.118\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.18\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:52387}, webauthn:extension:credBlob\u003dtrue, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, webauthn:extension:largeBlob\u003dtrue, unexpectedAlertBehaviour\u003dignore, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}), userDataDir\u003dC:\\Users\\omistaja\\AppData\\Local\\Temp\\scoped_dir7748_1834613390}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, strictFileInteractability\u003dfalse, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d114.0.5735.90, browserConnectionEnabled\u003dfalse, proxy\u003d{}, nativeEvents\u003dtrue, webauthn:extension:minPinLength\u003dtrue, webauthn:extension:prf\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 9ccb89214ca0783837c61a195e65846a\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div/div/div[2]/div}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.getText(Unknown Source)\r\n\tat Pages.admin_pages.AssertSearchresult(admin_pages.java:84)\r\n\tat Step_Definition.adm_searchUserTests.searchResultShouldReturnTheCorrectUser(adm_searchUserTests.java:63)\r\n\tat ✽.Then Search result should return the correct user(adm_searchUser.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "Search result should return the correct user",
+            "match": {
+              "location": "adm_searchUserTests.searchResultShouldReturnTheCorrectUser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Admin User",
+    "description": "",
+    "id": "admin-user",
+    "keyword": "Feature",
+    "uri": "adm_searchUser.feature"
+  }
+]
